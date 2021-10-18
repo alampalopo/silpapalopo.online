@@ -1,0 +1,56 @@
+{
+    "name": "silpapalopo/silpapalopo.online",
+    "description": "Silpapalopo website development",
+    "version": "1.0.0",
+    "type": "project",
+    "homepage": "https://silpapalopo.online",
+    "authors": [
+        {
+            "name": "alampalopo",
+            "email": "alam.palopokota@gmail.com",
+            "role": "developer"
+        },
+        {
+            "name": "mjamilasfihani",
+            "email": "mohammadjamilasfihani@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "support": {},
+    "require": {
+        "php": "^8.0",
+        "codeigniter4/framework": "4.1.4",
+        "codeigniter4/translations": "4.1.4",
+        "dompdf/dompdf": "^1.0",
+        "myth/auth": "dev-develop"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1",
+        "nfaiz/dbtoolbar": "^0.9.4"
+    },
+    "suggest": {
+        "ext-fileinfo": "Improves mime type detection for files"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "acme",
+            "App\\": "app",
+            "Config\\": "app/Config"
+        },
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    }
+}
